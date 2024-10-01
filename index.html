@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immersive Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Company Logo -->
+        <div id="logo-container">
+            <img src="images/indie.png" alt="Company Logo" id="company-logo"> <!-- Reference to your logo -->
+        </div>
+        <div class="flex-container">
+            <!-- Timer Section -->
+            <div id="timer-container">
+                <h1 class="timer-display gradient-text">00:00:00</h1>
+                <div class="timer-controls">
+                    <button id="start-btn" class="gradient-text">Start</button>
+                    <button id="pause-btn" class="gradient-text">Pause</button>
+                    <button id="reset-btn" class="gradient-text">Reset</button>
+                </div>
+                <!-- Wallpaper Customization Section -->
+                <div id="wallpaper-container">
+                    <label for="wallpaper-upload" class="gradient-text">Upload Custom Wallpaper:</label>
+                    <input type="file" id="wallpaper-upload">
+                </div>
+            </div>
+            <!-- Task Section -->
+            <div id="task-container">
+                <h2 class="gradient-text">Tasks</h2>
+                <div id="task-input-container">
+                    <input type="text" id="task-input" placeholder="Enter task">
+                    <button id="add-task-btn" class="gradient-text">Add Task</button>
+                </div>
+                <div id="task-list" class="task-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
